@@ -1,0 +1,1141 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* About Page */
+.about-page {
+    background-color: #111; /* Light beige for About Us */
+}
+
+/* Donation Page */
+.donation-page {
+    background-color: #111; /* Light blue for Donation page */
+}
+
+/* Help Page */
+.help-page {
+    background-color: #111; /* Light blue for Donation page */
+}
+
+/* Login Page */
+.login-page {
+    background-color: #111; /* Light blue for Donation page */
+}
+
+/* Welcome Page */
+.welcome-page {
+    background-color: #111; /* Light blue for Donation page */
+}
+
+/* Fjalla One Font */
+.fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Staatliches Font */
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    background: #111;
+    color: white;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 50px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#logo img {
+    height: 100px; /* Adjust logo height independently */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+#logo h1 {
+    margin-top: 12px;
+}
+
+#logo h1 a {
+    font-family: "Staatliches", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: white; /* Adjust the color as needed */
+}
+
+#logo h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo h1 a:hover {
+    color: #04e4ac;
+}
+
+#navbar ul {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#nav-list {
+    display: flex;
+}
+
+#nav-list button {
+    background-color: white;
+    border: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Fjalla One', sans-serif;/* Set consistent font for buttons */
+}
+
+#nav-list button:hover {
+    background-color: #04e4ac;
+    color: white; 
+}
+
+#nav-item {
+    margin-right: 30px;
+}
+
+#nav-item a {
+    font-family: "Fjalla One", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#nav-item a:hover {
+    color: #04e4ac;
+}
+
+/* Other styles remain unchanged... */
+
+.carousel-caption {
+    background: transparent;
+    font-family: "Fjalla One", sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* How We Work Section */
+#work {
+    margin: 80px auto; /* Center the section horizontally */
+    width: 65%; /* Adjust the width as needed */
+    /* background-color: #f9f9f9; */
+}
+
+#howwework {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#howwework strong {
+    font-family: "Fjalla One", sans-serif;
+    color: #00C897;
+    flex: 1;
+    text-align: left;
+    font-size: 50px;
+}
+
+#howwework p {
+    flex: 2;
+    text-align: right;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+/* Stats Section */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1100px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 30px 0;
+}
+
+/* Individual Stat Box */
+.stat-box {
+    text-align: center;
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    border-left: 1px solid #d9d9d9;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.stat-box:first-child {
+    border-left: none;
+}
+
+/* Big Number */
+.stat-number {
+    font-size: 45px;
+    font-weight: 800;
+    font-family: 'GT-America-Compressed', Arial, sans-serif;
+    display: block;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+
+/* Label Below */
+.stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 5px;
+    font-family: 'GT-America-Mono', Arial, sans-serif;
+    color: #333;
+    transition: 0.4s ease-in-out;
+}
+
+/* Hidden Info */
+.stat-info {
+    font-size: 20px;
+    color: #444;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+/* Hover Effect: Hide Number & Show Info */
+.stat-box:hover .stat-number {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.stat-box:hover .stat-label {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.stat-box:hover .stat-info {
+    color: #00C897;
+    opacity: 1;
+    height: auto;
+}
+
+
+/* Featured Impact Section */
+#featured-impact {
+    width: 65%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.impact-card {
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.impact-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.impact-card img:hover {
+    transform: scale(1.08);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.impact-card h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 24px;
+    font-family: "Fjalla One", sans-serif;
+    color: #333;
+}
+.impact-card h3:hover{
+color:#00C897;
+transition: transform 0.5s ease;
+}
+
+
+
+/* Check out our coolest features Section */
+#check {
+
+    margin: 100px auto; /* Center the section horizontally */
+    width: 65%; /* Adjust the width as needed */
+    /* background-color: #f9f9f9; */
+}
+
+#check-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#check-content strong {
+    flex: 1;
+    text-align: left;
+    font-size: 40px;
+}
+
+#check-content p {
+    font-family: "Fjalla One", sans-serif;
+    flex: 2;
+    text-align: right;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+#coolest {
+    font-family: "Fjalla One", sans-serif;
+    background: #00C897;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#cardsofcheck {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.card {
+    display: inline-block;
+    height: 200px;
+    width: 230px;
+    text-align: center;
+    background: none !important; /* Ensure no background */
+    border: none !important; /* Ensure no border */
+    box-shadow: none !important; /* Remove any box shadow */
+}
+
+
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-image {
+    width: 190px;
+    height: 190px;
+    background-color: white;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card-image:hover {
+    transform: scale(1.08) rotate(5deg);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 250px;
+}
+.card-content {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: rgb(160, 160, 160);
+    padding: 0 10px;
+}
+
+/* What We Do Section */
+#whatwedo {
+    margin: 70px auto; /* Center the section horizontally */
+    width: 65%; /* Adjust the width as needed */
+    /* background-color: #f9f9f9; */
+}
+
+#whatwedo-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#whatwedo-content strong {
+    font-family: "Fjalla One", sans-serif;
+    color: #00C897;
+    flex: 1;
+    text-align: left;
+    font-size: 50px;
+    
+}
+
+#whatwedo-content p {
+    flex: 2;
+    text-align: right;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+
+/* Donation Section with Background Video */
+.donation-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Background Video */
+.donation-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keeps it behind the content */
+    opacity: 0.3; /* Adjust transparency for readability */
+}
+
+/* Donation Content */
+.donation-content {
+    flex: 1;
+    max-width: 60%;
+    /* color: rgb(202, 201, 201); */
+    position: relative;
+    z-index: 2;
+}
+
+.donation-content h2 {
+    font-size: 40px;
+    color: #00C897;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.donation-content p {
+    font-size: 18px;
+    color: #353434;
+    margin-top: 15px;
+}
+
+/* Donation Card */
+.donation-card {
+    flex: 1;
+    max-width: 35%;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+.donation-card h3 {
+    font-size: 24px;
+    color: #00C897;
+    margin-bottom: 15px;
+}
+
+.donation-item {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+.donation-item:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.donation-item strong {
+    font-size: 22px;
+    color: #00C897;
+    display: block;
+}
+
+.donation-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.donation-card button {
+    background: #00C897;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.donation-card button:hover {
+    background: #008a6e;
+}
+
+
+
+/* Newsletter Section */
+.newsletter-section {
+    background: #00C897;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.newsletter-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    font-size: 16px;
+}
+
+.newsletter-form form {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    background: #fff;
+    color: #00C897;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Impact Story Section (Lotus) */
+.Lotus {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  display: block;
+  margin: 50px auto;
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Lotus-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Lotus-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Lotus-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.genre {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-weight: bold;
+  color: #ffb400;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.Lotus-small-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Lotus-text {
+  font-size: 16px;
+  color: rgb(220, 220, 220);
+}
+
+.Lotus-overlay span.material-symbols-outlined {
+  font-size: 30px;
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  color: rgb(205, 205, 205);
+  transform: rotate(-40deg);
+}
+
+/* How You Can Help Section */
+.help-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+
+.help-content {
+    flex: 1;
+    max-width: 60%;
+}
+
+.help-content h2 {
+    font-size: 40px;
+    color: #00C897;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.help-content p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.help-card {
+    flex: 1;
+    max-width: 35%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.help-card h3 {
+    font-size: 24px;
+    color: #00C897;
+    margin-bottom: 15px;
+}
+
+.help-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.help-card button {
+    background: #00C897;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.help-card button:hover {
+    background: #008a6e;
+}
+
+
+/* Footer Section */
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-highlights {
+    /* border: white solid 3px ; */
+    display: flex;
+    /* justify-content: space-between; */
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333;
+    width: 80%;
+    margin-left: 200px;
+}
+
+.footer-box h2 {
+    color: #00C897;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    font-size: 15px;
+}
+
+.footer-box a {
+    color: #00C897;
+    text-decoration: none;
+}
+
+.footer-links {
+     /* border: white solid 2px; */
+    display: flex;
+    justify-content:space-evenly ;
+    padding: 10px 20px 20px;
+    width: 80%;
+    margin-left: 200px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    color: #00C897;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.social-media a,
+.legal-links a {
+    color: #00C897;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.social-media a img {
+    color: white;
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+    margin: 0 5px; /* Adjust the margin as needed */
+}
+
+
+.footer-bottom p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+/* About Us Page Styles */
+.about-container {
+    width: 75%; /* Increased width for a larger section */
+    margin: 110px auto;
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    /* border: rgb(0, 0, 0) 2px solid; */
+    border-radius: 170px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+}
+
+.about-container h1 {
+    font-size: 60px; /* Increased font size for the heading */
+    color: #00C897;
+    font-family: "Fjalla One", sans-serif;
+    margin-bottom: 30px;
+}
+
+.about-container p {
+    font-size: 22px; /* Increased font size for the paragraph */
+    color: #444;
+    font-family: "Inter", sans-serif; /* Ensuring the font matches the rest of the site */
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 25px;
+}
+
+
+/* Help Page Styles */
+.help-container {
+    width: 75%; /* Increased width for a larger section */
+    margin: 110px auto;
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    border-radius: 170px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+}
+
+.help-container h1 {
+    font-size: 60px; /* Increased font size for the heading */
+    color: #00C897;
+    font-family: "Fjalla One", sans-serif;
+    margin-bottom: 30px;
+}
+
+.help-container h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    color: #333;
+}
+
+.help-container p {
+    font-size: 22px; /* Increased font size for the paragraph */
+    color: #444;
+    font-family: "Inter", sans-serif; /* Ensuring the font matches the rest of the site */
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 25px;
+}
+
+.help-container a {
+    color: #00C897;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-container a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.donation-container {
+    max-width: 1000px;
+    height: 1200px;
+    margin: 200px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 170px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+}
+
+.donation-container h1 {
+    font-size: 36px;
+    color: #00C897;
+    margin-bottom: 20px;
+}
+
+.donation-container p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.donation-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.donation-container ul li {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.donation-options {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.donation-options h2 {
+    font-size: 28px;
+    color: #00C897;
+    margin-bottom: 20px;
+}
+
+.donation-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.donation-card {
+    width: 260px;
+    padding: 20px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.donation-card h3 {
+    font-size: 22px;
+    color: #00C897;
+    margin-bottom: 10px;
+}
+
+.donation-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.donation-card button {
+    background: #00C897;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.donation-card button:hover {
+    background: #008a6e;
+}
+
+
+
+
+/* Styling the login container */
+.login-container {
+    width: 500px;
+    margin: 150px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 40px;
+    font-family: "Fjalla One", sans-serif;
+    color: #00C897;
+}
+
+.login-container p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Styling for buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #00C897;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background: #008a6e;
+}
+
+/* Hide both forms initially */
+.volunteer-form {
+    display: none;
+    justify-content: space-between;
+}
+/* General Form Styling */
+.volunteer-form {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Headings */
+.volunteer-form h3 {
+    font-size: 26px;
+    color: #00C897;
+    margin-bottom: 15px;
+    font-family: "Fjalla One", sans-serif;
+}
+
+/* Input Fields */
+.volunteer-form input,
+.volunteer-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* On Focus - Highlight the Field */
+.volunteer-form input:focus,
+.volunteer-form textarea:focus {
+    border-color: #00C897;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 200, 151, 0.5);
+}
+
+/* Dropdown Menu */
+.volunteer-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Textarea */
+.volunteer-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Stylish Buttons */
+.volunteer-form button {
+    width: 100%;
+    padding: 12px;
+    background: #00C897;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect for Button */
+.volunteer-form button:hover {
+    background: #008a6e;
+}
+
+/* Smoothly reveal the form */
+#old-volunteer-form:target,
+#new-volunteer-form:target {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CSS-based form toggling using :target */
+#old-volunteer-form:target {
+    display: block;
+}
+
+#new-volunteer-form:target {
+    display: block;
+}
+
+
+
+#welcome{
+    font-size: 95px;
+    color: #04f0b5;
+    padding: 380px;
+    
+}

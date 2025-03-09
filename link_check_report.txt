@@ -1,0 +1,17 @@
+# Link Check Report
+
+## Internal Links
+- All internal links are valid:
+  - index.html
+  - donation.html
+  - help.html
+  - login.html
+  - aboutus.html
+  - welcome.html
+
+## External Links
+- The status of the external links needs to be confirmed:
+  - Facebook: [Status Unknown]
+  - Twitter: [Status Unknown]
+  - Instagram: [Status Unknown]
+  - LinkedIn: [Status Unknown]
